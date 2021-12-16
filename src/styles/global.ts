@@ -12,8 +12,15 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    background-color: #181818;
-    color: #fff;
+    background-color: ${(props) => props.theme.colors.background};
+    color: ${(props) => props.theme.colors.text};
+    font-family: 'Roboto', sans-serif;
+  }
+
+  *, button, input {
+    border: 0;
+    outline: 0;
+    background: none;
   }
 `
 
